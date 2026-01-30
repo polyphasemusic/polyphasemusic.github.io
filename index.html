@@ -1,91 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Polyphase</title>
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif; }
-  body { background: #111; color: #eee; }
-
-  /* Navbar */
-  nav {
-    display:flex; justify-content:center; gap:40px;
-    background:#000; padding:20px 0; position:sticky; top:0; z-index:100;
-  }
-  nav a {
-    color:#eee; text-decoration:none; font-weight:bold; padding:5px 10px; transition:0.3s;
-  }
-  nav a:hover { color:#1db954; }
-
-  /* Sections */
-  section {
-    min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;
-    text-align:center; padding:50px 20px; background-size:cover; background-position:center;
-  }
-  section h1 { font-size:3rem; color:#1db954; margin-bottom:20px; text-shadow:0 0 10px #1db954; }
-  section p { font-size:1.2rem; max-width:600px; margin-bottom:20px; line-height:1.5; color:#eee; text-shadow: 0 0 5px #000; }
-
-  /* Music buttons */
-  .music-links a {
-    display:inline-block; margin:10px; padding:10px 20px;
-    border:2px solid #1db954; border-radius:5px; color:#1db954; text-decoration:none;
-    transition:all 0.3s; text-shadow:0 0 5px #000;
-  }
-  .music-links a:hover { background:#1db954; color:#111; box-shadow:0 0 10px #1db954; }
-
-  html { scroll-behavior:smooth; }
-
-  /* Image styling */
-  .section-img { max-width:90%; max-height:400px; margin:20px 0; border-radius:10px; box-shadow:0 0 20px #1db954; }
-
-  /* Overlay for background image sections */
-  .overlay {
-    background: rgba(0,0,0,0.6); padding:50px; border-radius:15px;
-  }
-</style>
-</head>
-<body>
-
-<!-- Navbar -->
-<nav>
-  <a href="#home">Home</a>
-  <a href="#music">Music</a>
-  <a href="#about">About</a>
-</nav>
-
-<!-- Home Section -->
-<section id="home" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80');">
-  <div class="overlay">
-    <h1>Polyphase</h1>
-    <p>Welcome to my world of synthwave and experimental sounds. Explore my music and get to know me.</p>
-    <img class="section-img" src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=800&q=80" alt="Music vibe">
-  </div>
-</section>
-
-<!-- Music Section -->
-<section id="music" style="background-image:url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1470&q=80');">
-  <div class="overlay">
-    <h1>Music</h1>
-    <div class="music-links">
-      <a href="https://open.spotify.com/" target="_blank">Spotify</a>
-      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-      <a href="https://soundcloud.com/" target="_blank">SoundCloud</a>
-    </div>
-    <img class="section-img" src="https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&w=800&q=80" alt="Music session">
-  </div>
-</section>
-
-<!-- About Section -->
-<section id="about" style="background-image:url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=1470&q=80');">
-  <div class="overlay">
-    <h1>About</h1>
-    <p>Hey, I’m Sounak (Polyphase). I make synthwave and experimental music. I’m passionate about creating vibes that take you to another world.</p>
-    <img class="section-img" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="About me">
-  </div>
-</section>
-
-</body>
+<!DOCTYPE HTML> 
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+--> 
+<html> 
+    <head> 
+        <title>Hyperspace by HTML5 UP</title>         
+        <meta charset="utf-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/> 
+        <link rel="stylesheet" href="assets/css/main.css"/> 
+        <noscript>
+            <link rel="stylesheet" href="assets/css/noscript.css"/>
+        </noscript>         
+    </head>     
+    <body class="is-preload"> 
+        <!-- Sidebar -->         
+        <section id="sidebar"> 
+            <div class="inner"> 
+                <nav> 
+                    <ul> 
+                        <li>
+                            <a href="#intro">Home</a>
+                        </li>                         
+                        <li>
+                            <a href="#one">Music</a>
+                        </li>                         
+                        <li>
+                            <a href="#two">About</a>
+                        </li>                         
+                        <li>
+                            <a href="#three">Contact</a>
+                        </li>                         
+                    </ul>                     
+                </nav>                 
+            </div>             
+        </section>         
+        <!-- Wrapper -->         
+        <div id="wrapper"> 
+            <!-- Intro -->             
+            <section id="intro" class="wrapper style1 fullscreen fade-up"> 
+                <div class="inner"> 
+                    <h1>_polyphase</h1> 
+                    <p>Welcome to the official website of _polyphase. Here you will find streaming platform links and get to know _polyphase better.</p>
+                    <p></p>
+                    <p></p> 
+                    <ul class="actions"> 
+                        <li>
+                            <a href="#one" class="button scrolly">Continue below</a>
+                        </li>                         
+                    </ul>                     
+                </div>                 
+            </section>             
+            <!-- One -->             
+            <section id="one" class="wrapper style2 spotlights"> 
+                <section> 
+                    <a href="https://open.spotify.com/artist/0RJKcypE6rGnyROJl0L2SO?si=8E_Pv562QHWsaX293hFsAA" class="image"><img src="images/pic01.png" alt="" data-position="center center" height="360" width="440"/></a> 
+                    <div class="content"> 
+                        <div class="inner"> 
+                            <h2>Spotify</h2> 
+                            <p>Click the button below to stream on Spotify</p> 
+                            <ul class="actions"> 
+                                <li>
+                                    <a href="https://open.spotify.com/artist/0RJKcypE6rGnyROJl0L2SO?si=8E_Pv562QHWsaX293hFsAA" class="button" target="_blank" rel="noopener noreferrer"> 
+  Open
+</a>
+                                </li>                                 
+                            </ul>                             
+                        </div>                         
+                    </div>
+                </section>                 
+                <section> 
+                    <a href="#" class="image"><img src="images/pic02.png" alt="" data-position="top center" height="439"/></a> 
+                    <div class="content"> 
+                        <div class="inner"> 
+                            <h2>Apple Music</h2> 
+                            <p>Click the button below to stream on Apple Music</p> 
+                            <ul class="actions"> 
+                                <li>
+                                    <a href="https://music.apple.com/us/artist/polyphase/19112642" class="button" target="_blank" rel="noopener noreferrer"> 
+  Open
+</a>
+                                </li>                                 
+                            </ul>                             
+                        </div>                         
+                    </div>                     
+                </section>                 
+                <section> 
+                    <a href="#" class="image"><img src="images/pic03.png" alt="" data-position="25% 25%" height="360" width="360"/></a> 
+                    <div class="content"> 
+                        <div class="inner"> 
+                            <h2>Linktree</h2> 
+                            <p>Click the button to open my Linktree. Here you&apos;ll find all other links and more.</p> 
+                            <ul class="actions"> 
+                                <li>
+                                    <a href="https://linktr.ee/_polyphase" class="button">open</a>
+                                </li>                                 
+                            </ul>                             
+                        </div>                         
+                    </div>                     
+                </section>                 
+            </section>             
+            <!-- Two -->             
+            <section id="two" class="wrapper style3 fade-up"> 
+                <div class="inner"> 
+                    <h2>About the Artist:</h2> 
+                    <p>Previously known as The Midnight Flight, _polyphase crafts immersive synthwave landscapes that explore solitude, reflection, and late-night introspection. His EP, The Midnight Flight pays homage to his origins, carrying forward the sound and spirit that first defined his musical journey.</p> 
+                    <div class="features">                                                                                                                                                       
+</div>                     
+                    <ul class="actions"> 
+                        <li>
+</li>                         
+                    </ul>                     
+                </div>                 
+            </section>             
+            <!-- Three -->             
+            <section id="three" class="wrapper style1 fade-up"> 
+                <div class="inner"> 
+                    <h2>Get in touch</h2> 
+                    <p>For any queries DM at Instagram, Email or Fill out the form below. For fastest response, DM to instagram.com/_gammarays</p>
+                    <p>If you want to join mailing list for updates, fill out the form and write message as &quot;join mailinglist&quot;.</p>
+                    <p>To report bugs or dispute anything DM to instagram.com/_gammarays for fastest response.</p> 
+                    <div class="split style1"> 
+                        <section> 
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWImQjZa32KQaGsZBf0-ftzt0BbSOEFRKWQUtv292vf41m4g/viewform?embedded=true" width="660" height="990" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                             
+                            <ul class="actions"> 
+                                <li>
+</li>                                 
+                            </ul>                             
+                        </section>                         
+                        <section> 
+                            <ul class="contact"> 
+                                <li> 
+                                    <h3>Email</h3> 
+                                    <a href="mailto:themidnightflightoff@gmail.com">themidnightflightoff@gmail.com</a> 
+                                </li>                                 
+                                <li> 
+                                    <h3>Social</h3> 
+                                    <small>Instagram: _polyphase</small> 
+                                </li>                                 
+                            </ul>                             
+                        </section>                         
+                    </div>                     
+                </div>                 
+            </section>             
+        </div>         
+        <!-- Footer -->         
+        <footer id="footer" class="wrapper style1-alt"> 
+            <div class="inner"> 
+                <ul class="menu">
+                    <li>&nbsp;&copy;2026&nbsp; _polyphase. All rights reserved.&nbsp;<br>
+                        <p>Spotify&reg;, Apple Music&reg;, YouTube&reg;, Linktree&reg; are trademarks of their respective owners. No affiliation or endorsement implied.<br>linktree logo from:&nbsp;https://www.vecteezy.com/png/68764227-linktree-logo-icon-linktree-app-transparent-background</p>
+                    </li>
+                </ul>                 
+            </div>             
+        </footer>         
+        <!-- Scripts -->         
+        <script src="assets/js/jquery.min.js"></script>         
+        <script src="assets/js/jquery.scrollex.min.js"></script>         
+        <script src="assets/js/jquery.scrolly.min.js"></script>         
+        <script src="assets/js/browser.min.js"></script>         
+        <script src="assets/js/breakpoints.min.js"></script>         
+        <script src="assets/js/util.js"></script>         
+        <script src="assets/js/main.js"></script>         
+    </body>     
 </html>
-
-
